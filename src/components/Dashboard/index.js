@@ -56,7 +56,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
   return (
     <div className="container">
       {/* BUG 5: Removed !isEditing check so the table stays visible during editing */}
-      {!isAdding && !isEditing && (
+      {!isAdding && (
         <>
           <Header
             setIsAdding={setIsAdding}
